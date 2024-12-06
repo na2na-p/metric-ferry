@@ -1,0 +1,9 @@
+services:
+  go:
+    build:
+        context: .
+        dockerfile: Dockerfile.local
+    volumes:
+      - .:/app
+    env_file:
+      - .env
